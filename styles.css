@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color:red;
+    text-align: center;
+    font-size: 2em;
+    z-index: 2;
+}
+
+.user-info {
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    color:red;
+    z-index: 2;
+}
+
+.video-description {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+    color: white;
+    z-index: 2;
+}
+
+.interaction-icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* create a gap */
+    gap: 10px;
+    bottom: 10%;
+    right: 2%;
+    text-align: right;
+    z-index: 2;
+}
+
+.icon {
+    display: block;
+    margin: 5px 0;
+    color: white;
+}
+
+/* You may need to add additional styles for responsiveness and icon images */
